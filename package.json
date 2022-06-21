@@ -7,7 +7,7 @@
         "type": "git",
         "url": "https://github.com/tensorchord/vscode-envd"
     },
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.63.0"
     },
@@ -26,17 +26,28 @@
         "buildkit"
     ],
     "contributes": {
-        "languages": [{
-            "id": "envd",
-            "aliases": ["Envd", "envd"],
-            "extensions": [".envd", "build.envd", "config.envd"],
-            "configuration": "./syntaxes/envd.configuration.json"
-        }],
-        "grammars": [{
-            "language": "envd",
-            "scopeName": "source.envd",
-            "path": "./syntaxes/envd.tmLanguage.json"
-        }],
+        "languages": [
+            {
+                "id": "envd",
+                "aliases": [
+                    "Envd",
+                    "envd"
+                ],
+                "extensions": [
+                    ".envd",
+                    "build.envd",
+                    "config.envd"
+                ],
+                "configuration": "./syntaxes/envd.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "envd",
+                "scopeName": "source.envd",
+                "path": "./syntaxes/envd.tmLanguage.json"
+            }
+        ],
         "configuration": [
             {
                 "type": "object",
